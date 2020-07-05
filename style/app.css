@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+:root{
+    --color_black_standard: #1b1b1b;
+}
+
 body{
     display: flex;
     justify-content: center;
@@ -63,6 +67,7 @@ body{
     text-align: center;
     font-weight: bold;
 }
+
 .card .options{
     text-align:center;
     color: #fff;
@@ -74,10 +79,9 @@ body{
     background: #fff;
     border: none;
     border-radius: 5px;
-    color: #1b1b1b;
+    color: var(--color_black_standard);
     font-weight: 800;
     margin-left: 5px;
-  
 }
 
 .card .options .colors{
@@ -89,8 +93,6 @@ body{
     opacity: 0;
     transition: all 0.8s ease;
 }
-
-
 
 .options span{
     margin-right: 10px;
@@ -119,7 +121,7 @@ body{
     background-color: #fff;
     border: none;
     border-radius: 10px;
-    color: #1b1b1b;
+    color: var(--color_black_standard);
     font-weight: 800;
     font-size: 15px;
     cursor: pointer;
@@ -128,7 +130,7 @@ body{
     transition: all 1s ease;
 }
 
-.active{
+.active_size{
     background-color: blanchedalmond !important;
 }
 
@@ -150,7 +152,6 @@ body{
 .card:hover::after{
     width: 115%;
 }
-
 
 .card:hover .colors{
     transform: translateY(0%);
